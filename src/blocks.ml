@@ -387,7 +387,6 @@ module Make_Abstract
        include G with type t = S.t HM.t and type V.t = HM.key
        val remove_edge: t -> vertex -> vertex -> t
        val remove_edge_e: t -> edge -> t
-       val unsafe_add_vertex: t -> vertex -> t
        val unsafe_add_edge: t -> vertex -> S.elt -> t
        val unsafe_remove_edge: t -> vertex -> vertex -> t
        val unsafe_remove_edge_e: t -> edge -> t
