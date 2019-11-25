@@ -58,6 +58,7 @@ module type HM = sig
   val find_and_raise : key -> 'a t -> string -> 'a
   (** [find_and_raise k t s] is equivalent to [find k t] but
       raises [Invalid_argument s] when [find k t] raises [Not_found] *)
+
   val iter : (key -> 'a -> unit) -> 'a t -> unit
   val map : (key -> 'a -> key * 'a) -> 'a t -> 'a t
   val fold : (key -> 'a -> 'b -> 'b) -> 'a t -> 'b -> 'b
