@@ -1,0 +1,9 @@
+(library
+  (name graph)
+  (libraries graphlib stdlib-shims)
+  (modules_without_implementation sig_pack sig dot_ast)
+  (public_name ocamlgraph))
+
+(ocamllex gml dot_lexer)
+
+(ocamlyacc dot_parser)
